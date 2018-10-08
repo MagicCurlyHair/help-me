@@ -1,7 +1,7 @@
 module.exports = function count(s, pairs) {
   let counter = 0;
   const N = pairs.reduce((n, pair) => {
-    if (pair[1] > 2 || n > 100000){
+    if (pair[1] > 5 || n > 100000){
       return null;
     }
     return n * (pair[0] ** pair[1])
